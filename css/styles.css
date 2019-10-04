@@ -1,0 +1,228 @@
+/* white #c9c1ac*/
+/*red color #d3325f*/
+
+.info{
+    background: #c9c1ac;
+}
+
+*{
+    font-family: 'Grenze', serif;
+};
+.main1 {
+    background-image: url("/images/art-background-color-459277.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* body {
+    color: #c9c1ac;
+    background: url("/images/art-background-blocks-810036.jpg");
+    /* background-repeat: repeat-x;
+    background-size: 500px; */
+
+.primary-color {
+    color: #d3325f;
+}
+
+.info h2 {
+    word-spacing: 0.6rem;
+}
+
+.info a {
+    transition: color 2s ease-in-out;
+}
+.info a:hover{
+    color: #242424;
+}
+/*################header###############*/
+
+#header{
+    min-height: calc(100vh - 94px);
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/pexels-photo-1596888.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.height-90 {
+    min-height: calc(100vh - 94px);
+}
+
+.banner-text-center {
+    border-top: 6px dotted #c9c1ac;
+    border-bottom: 6px dotted #c9c1ac;
+    
+    animation: fromLeft; 
+    animation-direction: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    text-align: center;
+     width: 30%; 
+     /* margin-left: 200px; */
+     margin: auto;
+     
+
+}
+.banner2{
+    text-align: center;
+    animation-direction: 4s;
+    animation: fromLeft; 
+    animation-delay: 2s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    padding-top: 2rem;
+    
+ 
+
+}
+@keyframes fromLeft {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+
+
+}
+
+.main-btn {
+    /* color: #d3325f; */
+    font-size: 2rem;
+    border: 2px solid #d3325f;
+    transition: all is ease-in-out;
+}
+
+.main-btn:hover {
+    color: #242424;
+    border: 2px solid #c9c1ac;
+    background: #c9c1ac;
+}
+
+.pizza-btn {
+    animation: fromRight;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards
+}
+
+@keyframes fromRight {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }}
+
+
+.header-link {
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: #c9c1ac;
+    border-radius: 10px;
+    transition: all 2s ease; 
+    animation: fromBotton;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.header-link:hover {
+    color: #242424;
+}
+
+@keyframes fromBottom {
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+nav {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 10px 0;
+	margin-right: 0%;
+}
+nav > ul {
+	text-align: center;
+}
+
+nav > ul > li {
+	display: inline-block;
+}
+nav > ul > li > a {
+	padding: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.733);
+}
+nav > ul > li > a:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+	background: rgba(221, 109, 35, 0.678);
+	color: rgba(0, 35, 122, 0.7);
+}
+
+#kash {
+	color: white;
+	text-align: center;
+}
+.order-form{
+text-align: center;
+margin-top:120px;
+
+}
+
+h1{
+  font-family: 'Grenze', serif;
+  font-size:80px;
+}
+form{
+  background-color:#211e1e;
+  color:white;
+  border-radius:5px;
+  height:auto;
+  width:450px;
+}
+#wrapper{
+  margin-top:-50px;
+ float:center;
+}
+input{
+  font-family:'Grenze', serif;;
+  font-size:17px;
+  font-weight:bold;
+}
+ #tot{
+  text-align: left;
+  margin-top:120px;
+  color: black;
+}
+
+.container2 {
+    background-image: url("/images/4k-wallpaper-abstract-expressionism-abstract-painting-1269968.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizza-Inn</title>
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- main css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- font awesome js-->
+    <script src="js/all.js"></script>
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+    <!-- magnific pop up-->
+    <link rel="stylesheet" href="magnific pop up/magnific-popup.css">
+</head>
+
+<body>
+    <!--social-icons-->
+    <div class="container-fluid info p-3" id="top-icons">
+        <div class="row">
+            <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+                <div class="info-icons p-2">
+                    <a href="" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+                <h2 class="primary-color p-2 text-capitalize">Kenol, Magadi Road, Rongai, kenya</h2>
+            </div>
+        </div>
+
+    </div>
+    <!--end of social icons-->
+    <!--header section-->
+    <header class="" id="header">
+        <div class="container">
+            <div class="headerx">
+
+                <div class="banner-text-center">
+                    <h1 class="display-1 text-capitalize w-50 mx-auto">
+                        <small>KASH</small><strong class="primary-color">pizza</strong>
+                    </h1>
+
+                </div>
+
+                <div class="banner2"><a href="" class="btn main-btn pizza-btn my-4 text-capitalize">order online</a>
+                </div>
+
+
+            </div>
+        </div>
+        <a href="#items" class="btn header-link primary-color"><i class="fas fa-arrow-down"></i></a>
+    </header>
+
+    <main>
+        <div class="main1">
+            <h1 id="kash">Order Online your Pizza</h1>
+        </div>
+    </main>
+    <div class="container2">
+        <div class="row">
+            <div class="col-md-6">
+                <section class="order-form">
+                    <div id="inputs">
+                        <form id="myForm">
+                            <h1>Order</h1>
+                            First name: <input type="text" name="firstname" placeholder="Your name"><br><br>
+                            Last name: <input type="text" name="lastname" placeholder="lastname"><br><br>
+                            Address: <input type="text" name="email" placeholder="1234 Street City, ST Zip"><br /><br />
+                            <p>enter the size you want</p>
+                            <select id="sizeSelector">
+                                <option disabled selected>size</option>
+                                <option id="size1" value="500">small</option>
+                                <option id="size2" value="800">medium</option>
+                                <option id="size3" value="1200">large</option>
+                            </select>
+                            <p>Pizza toppings (Check all that apply)</p>
+                            <input value="200" type='checkbox' checked>Cheese
+                            <input type='checkbox' value="500">Mushrooms
+                            <input type='checkbox' value="400">Pepperoni<br>
+                            <input type='checkbox' value="500">Sausage
+                            <input type='checkbox' value="700">Onions<br>
+                            <input type='checkbox' value="500">Bacon
+                            <input type='checkbox' value="600">Olive<br>
+                            <p>enter the crust you want</p>
+                            <select id="crustSelector">
+                                <option disabled selected>crust</option>
+                                <option id="crust1" value="300">crispy</option>
+                                <option id="crust2" value="400">stuffed</option>
+                                <option id="crust3" value="500">gluten free</option>
+                                <option id="crust1" value="500">italian</option>
+                                <option id="crust2" value="300">new york pan</option>
+                                <option id="crust3" value="200">sicilian style</option>
+                                <option id="crust1" value="500">neopalitan</option>
+                            </select><br><br>
+                            <p></p>
+                            <button type="submit" value="Submit" id="sb">submit</button>
+                            <!-- <img src="/images/art-background-blocks-810036.jpg" id="img1" height="30" width="40"> -->
+                    </div>
+                    </form>
+                </section>
+            </div>
+            <div class="col-md-6" id="tot">
+                <h1 id="smr"> Summary</h1>
+                <h1 id="total1"> Total:</h1><br><br><br>
+                <button type="button" onclick="window.location.reload(true)" id="newOrder">New Order</button>
+
+            </div>
+            <p id="checksum"></p>
+        </div>
+    </div>
+
+    <!-- end of navbar-->
+
+    <!-- jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha384-mlceH9HlqLp7GMKHrj5Ara1+LvdTZVMx4S1U43/NxCvAkzIo8WJ0FE7duLel3wVo"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap js-->
+    <scripy src="js/bootstrap.bundle.min.js"></scripy>
+    <!-- ripple-->
+    <script src="js/jquery.ripples-min.js"></script>
+    <!-- magnific pop up-->
+    <script src="magnific pop up/jquery.magnific-popup.js"></script>
+    <!--js-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
