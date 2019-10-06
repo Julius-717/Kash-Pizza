@@ -37,3 +37,6 @@ It`s installation is very simple.
 
 ## Technologies Used
     I used HTML,CSS,JQUERY,JAVASCRIPT,BOOTSTRAP,JQUERY RIPPLE EFFECTS.
+
+## Inspiration
+My All Credits goes to Moringa School Technical Mentors especially Cynthia,Boyd and Katana the TMs who Always guide us and share with us more and more in Programming.Thank you!
