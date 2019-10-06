@@ -43,3 +43,6 @@ My All Credits goes to Moringa School Technical Mentors especially Cynthia,Boyd 
 
 ## Support and Contact details
 contact me via waynejulius10@gmail.com
+
+### License
+* This project is licensed by [MIT License].Copyright (c) 2019
