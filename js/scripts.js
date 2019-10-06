@@ -43,7 +43,7 @@ $("#sb").click(function() {
         $('#checksum').append("<p>"+newOrder.crust+ "</p>");
         $('#checksum').append("<p>"+newOrder.toppingsArr+ "</p>");
     });
-    $('#sb').click(function() {
+    $('#img1').click(function() {
         alert("the delivery cost is 200");
         var loc = prompt("enter ur location");
         alert("your order will be delivered to" +" "+ loc);
