@@ -30,4 +30,7 @@ It`s installation is very simple.
 * Crust
 * Toppings
 * click on submit button
-* click on derivery clickable Imagen
+* click on derivery clickable Image
+
+## Known Bugs
+    None at the moment
