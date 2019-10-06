@@ -34,3 +34,6 @@ It`s installation is very simple.
 
 ## Known Bugs
     None at the moment
+
+## Technologies Used
+    I used HTML,CSS,JQUERY,JAVASCRIPT,BOOTSTRAP,JQUERY RIPPLE EFFECTS.
