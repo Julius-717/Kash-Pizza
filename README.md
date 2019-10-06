@@ -40,3 +40,6 @@ It`s installation is very simple.
 
 ## Inspiration
 My All Credits goes to Moringa School Technical Mentors especially Cynthia,Boyd and Katana the TMs who Always guide us and share with us more and more in Programming.Thank you!
+
+## Support and Contact details
+contact me via waynejulius10@gmail.com
