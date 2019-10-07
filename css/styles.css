@@ -9,7 +9,7 @@
     font-family: 'Grenze', serif;
 };
 .main1 {
-    background-image: url("/images/art-background-color-459277.jpg");
+    background-image: url("../images/art-background-color-459277.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -222,7 +222,7 @@ input{
 }
 
 .container2 {
-    background-image: url("/images/Delicious-pizza-with-wooden-background-vector-03.jpg");
+    background-image: url("../images/Delicious-pizza-with-wooden-background-vector-03.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
