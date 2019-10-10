@@ -72,33 +72,49 @@
                             <p>enter the size you want</p>
                             <select id="sizeSelector">
                                 <option disabled selected>size</option>
-                                <option id="size1" value="600">small</option>
-                                <option id="size2" value="1000">medium</option>
-                                <option id="size3" value="1250">large</option>
+                                <option id="size1" value="600">small ksh.600</option>
+                                <option id="size2" value="1000">medium ksh.400</option>
+                                <option id="size3" value="1250">large ksh.1250</option>
                             </select>
                             <p>Pizza toppings (Check all that apply)</p>
-                            <input value="200" type='checkbox' checked>Cheese
-                            <input type='checkbox' value="100">Mushrooms
-                            <input type='checkbox' value="200">Pepperoni<br>
-                            <input type='checkbox' value="50">Sausage
-                            <input type='checkbox' value="50">Onions<br>
-                            <input type='checkbox' value="150">Bacon
-                            <input type='checkbox' value="200">Olive<br>
+                            <input value="200" type='checkbox' checked>Cheese ksh.200
+                            <input type='checkbox' value="100">Mushrooms ksh.100
+                            <input type='checkbox' value="200">Pepperoni ksh.200<br>
+                            <input type='checkbox' value="50">Sausage ksh.50
+                            <input type='checkbox' value="50">Onions ksh.50<br>
+                            <input type='checkbox' value="150">Bacon ksh.150
+                            <input type='checkbox' value="200">Olive ksh.200<br>
                             <p>enter the crust you want</p>
                             <select id="crustSelector">
                                 <option disabled selected>crust</option>
-                                <option id="crust1" value="100">crispy</option>
-                                <option id="crust2" value="150">stuffed</option>
-                                <option id="crust3" value="200">gluten free</option>
-                                <option id="crust1" value="250">italian</option>
-                                <option id="crust2" value="300">new york pan</option>
-                                <option id="crust3" value="350">sicilian style</option>
-                                <option id="crust1" value="400">neopalitan</option>
+                                <option id="crust1" value="100">crispy ksh.100</option>
+                                <option id="crust2" value="150">stuffed ksh.150</option>
+                                <option id="crust3" value="200">gluten free ksh.200</option>
+                                <option id="crust1" value="250">italian ksh.250</option>
+                                <option id="crust2" value="300">new york pan ksh.300</option>
+                                <option id="crust3" value="350">sicilian style ksh.350</option>
+                                <option id="crust1" value="400">neopalitan ksh.400</option>
                             </select><br><br>
                             <p></p>
-                            <button type="submit" value="Submit" id="sb">submit</button>
-                            <img src="../images/cartoon-pizza-delivery-man-riding-a-scooter-vector-24043621.jpg" id="img1"
-                                height="30" width="40">
+                            <div class="row" id="slides">
+                                <h2><strong>How Many Pizzas do you want?</strong></h2>
+                                <div class="col-md-4">
+                                    <form id="number">
+                                        <input type="number" id="quantity" name="quantity" min="1">
+                                        <button type="submit" value="Submit" id="sb">submit</button>
+                                        <div class="row" id="checkout">
+                                            <h2><strong>Delivery</strong></h2>
+                                            <form class="delivery">
+                                                <img src="../images/cartoon-pizza-delivery-man-riding-a-scooter-vector-24043621.jpg"
+                                                    id="img1" height="30" width="40">
+                                                <!-- <input type="submit"> -->
+                                            </form>
+                                        </div>
+                                </div>
+
+                        </form>
+                    </div>
+                   
                     </div>
                     </form>
                 </section>
