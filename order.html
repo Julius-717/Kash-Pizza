@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Page Title -->
+  <title>Solent Pizzas - After original italian recipes, but with solent flavour</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+
+<body id="order-body">
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+          <i class="fas fa-angle-right arrow-right"></i>
+        </li>
+        <li class="active">
+          <a href="order.html">Order</a>
+          <i class="fas fa-angle-right arrow-right"></i>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+          <i class="fas fa-angle-right arrow-right"></i>
+        </li>
+      </ul>
+    </div>
+    <!-- end of .sidebar  -->
+
+    <!-- Schedule Bar -->
+    <div class="schedule-bar">
+      <div class="row">
+        <div class="left-side">
+          <a href="#" id="open-nav" class="open-nav">
+            <i class="fas fa-caret-right symbol"></i>
+          </a>
+          <p>
+            <i class="far fa-calendar-alt"></i>
+            <span id="date"></span>
+            <i class="far fa-clock"></i>
+            <span id="time"></span>
+          </p>
+        </div>
+        <div class="right-side">
+          <p>The restaurant is now
+            <span id="open-close-switcher"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end of .schedule-bar  -->
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper order-content-wrapper" id="content-wrapper">
+      <!-- close nav btn -->
+      <a href="#" id="close-nav" class="close-nav">
+        <i class="fas fa-caret-left symbol"></i>
+      </a>
+
+      <!-- error container -->
+      <div id="error-container">
+        <p id="errorMsg"></p>
+      </div>
+      <!-- end of .error container -->
+
+      <h1 id="webtitle">Order Now</h1>
+
+      <!-- Buttons Area -->
+      <div class="buttons-area">
+        <a href="#" id="orders_btn" onclick="open_modal();">View your orders</a>
+        <a href="#" id="logout_btn" onclick="logout();">Log Out</a>
+      </div>
+      <!-- End of .buttons-area -->
+
+      <div class="devider"></div>
+
+      <div class="central-elements">
+        <!-- Form Starts -->
+        <form name="order_form" id="order_form">
+          <!-- Pizza Base Container -->
+          <div class="options-container">
+            <div class="header">
+              <p>Select your pizza base *:</p>
+            </div>
+            <div class="content">
+              <input type="radio" name="base" id="small_base" value="Small Base - £5" onclick="add_to_recit(this); Total_Price();">
+              <p class="size">Small<span>£5</span></p><br>
+              <input type="radio" name="base" id="medium_base" value="Medium Base - £7.50" onclick="add_to_recit(this); Total_Price();">
+              <p class="size">Medium<span>£7.50</span></p><br>
+              <input type="radio" name="base" id="large_base" value="Large Base - £10.00" onclick="add_to_recit(this); Total_Price();">
+              <p class="size">Large<span>£10.00</span></p><br>
+              <input type="radio" name="base" id="xlarge_base" value="Extra Large Base - £12.50" onclick="add_to_recit(this); Total_Price();">
+              <p class="size">X-Large<span>£12.50</span></p>
+            </div>
+          </div>
+          <!-- End of Pizza Base Container -->
+          
+          <!-- Pizza Topping Container -->
+          <div class="options-container">
+            <div class="header">
+              <p>Select one or more topping *:</p>
+            </div>
+            <div class="content">
+              <input type="checkbox" name="topping" id="cheeseT" value="Cheese Topping - £0.20" onclick="add_to_recit(this); Total_Price();">
+              <p class="size">Cheese<span>£0.20</span></p><br>
+              <input type="checkbox" name="topping" id="mushroomsT" value="Mushrooms Topping - £0.40" onclick="add_to_recit(this); Total_Price();">
+              <p class="size">Mushrooms<span>£0.40</span></p><br>
+              <input type="checkbox" name="topping" id="hamT" value="Ham Topping - £0.50" onclick="add_to_recit(this); Total_Price();">
+              <p class="size">Ham<span>£0.50</span></p><br>
+              <input type="checkbox" name="topping" id="anchoviesT" value="Anchovies Topping - £0.60" onclick="add_to_recit(this); Total_Price();">
+              <p class="size">Anchovies<span>£0.60</span></p>
+            </div>
+          </div>
+          <!-- End of Pizza Topping Container -->
+
+          <!-- Pizza Extras Container -->
+          <div class="options-container">
+            <div class="header">
+              <p>Extras:</p>
+            </div>
+            <div class="content">
+              <input type="checkbox" name="extra" id="chipsE" value="Extra Chips - £1.50" onclick="add_to_recit(this); Total_Price();">
+              <p class="size">Chips<span>£1.50</span></p><br>
+
+              <input type="checkbox" name="extra" id="garlicE" value="Extra Garlic - £2.00" onclick="add_to_recit(this); Total_Price();">
+              <p class="size">Garlic Bread<span>£2.00</span></p><br>
+            </div>
+          </div>
+          <!-- End of Pizza Extras Container -->
+
+          <!-- Delivery Information Container -->
+          <div class="options-container">
+            <div class="header">
+              <p>Delivery Information</p>
+            </div>
+            <div class="content">
+              <p class="size">Address Line 1</p>
+              <input type="text" name="address" id="address"><br>
+
+              <p class="size">Post Code</p>
+              <input type="text" name="post_code" id="post_code"><br>
+            </div>
+          </div>
+          <!-- Delivery Information Container -->
+
+          <!-- Buttons Area -->
+          <div class="buttons-area">
+            <input type="submit" name="submit" id="submit" onclick="order_validation(event);" form="order_form" value="Place Order">
+            <a href="#" id="reset_btn" onclick="resetFunction(event);">Reset</a>
+          </div>
+          <!-- End of Buttons Area -->
+        </form>
+        <!-- End of Form -->
+
+        <!-- Summary Container -->
+        <div class="recit">
+          <div class="header">
+            <p>Order Summary</p>
+          </div>
+          <div class="content" id="recit_body">
+            <!-- Elements -->
+          </div>
+          <div class="panel-footer">
+            <div class="left">
+              <p>Total</p>
+            </div>
+            <div class="right">
+              <p id="total_price">£0.00</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Of Summary Container -->
+      </div> <!-- End of Central-Elements -->
+
+    <!-- Bottom Page Section -->
+    <div class="bottom-page">
+      <div class="schedule-section">
+        <h2>
+          <i class="fas fa-calendar-check"></i>Schedule</h2>
+        <p>Mon-Thu:
+          <span>10:00 - 19:00</span>
+        </p>
+        <p>Fri-Sun:
+          <span>10:00 - 23:00</span>
+        </p>
+      </div>
+      <div class="location-section">
+        <h2>
+          <i class="fas fa-location-arrow"></i>Location</h2>
+        <p>E Park Terrace</p>
+        <p>Southampton, UK</p>
+        <p>SO14 0YN</p>
+      </div>
+    </div>
+    <!-- end of .bottom-page -->
+    
+    <div class="footer">
+      <p>Copyright &copy;
+        <span id='footer-year'></span>
+      </p>
+    </div>
+    
+    </div>
+    <!-- end of .content-wrapper -->
+    
+  </div>
+  <!-- end of .wrapper -->
+
+
+  <!-- Orders Modal -->
+  <div class="modal" id="overlay">
+    <span onclick="close_modal();">&times;</span>
+    <p>Your Orders</p>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Small Base</th>
+            <th>Medium Base</th>
+            <th>Large Base</th>
+            <th>X-Large Base</th>
+            <th>Cheese Topping</th>
+            <th>Mushrooms Topping</th>
+            <th>Ham Topping</th>
+            <th>Anchovies Topping</th>
+            <th>Chips Extra</th>
+            <th>Garlic Bread Extra</th>
+            <th>Address Line 1</th>
+            <th>Postcode</th>
+            <th>Total Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>LC3issglZC2sCZntCsE</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Selected</td>
+            <td>Selected</td>
+            <td>Selected</td>
+            <td>Selected</td>
+            <td>Selected</td>
+            <td>Selected</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>10.2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    
+  
+  <!-- Firebase-->
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+
+  <!-- Add Orders to Firebase -->
+  <script src="assets/js/add_to_firebase.js"></script>
+
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Prevent stranger to go into Order Page without login
+      var uid = null;
+      firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+          // User is signed in.
+          uid = user.uid;
+          var username = user.displayName;
+          document.getElementById('webtitle').innerHTML = 'Welcome, ' + username;
+        } else {
+          // Redirect to Login Page
+          uid = null;
+          window.location.replace("login.html")
+        }
+      });
+      // Logout Option
+      function logout() {
+        firebase.auth().signOut();
+      }
+  </script>
+</body>
+</html>
