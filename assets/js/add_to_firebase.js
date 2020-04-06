@@ -4,10 +4,10 @@ var theForm = document.forms["order_form"];
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyBgJ1xaXADp-cxoGD6lMS9BvYQH_p76ZG4",
-    authDomain: "solent-pizzas.firebaseapp.com",
-    databaseURL: "https://solent-pizzas.firebaseio.com",
-    projectId: "solent-pizzas",
-    storageBucket: "solent-pizzas.appspot.com",
+    authDomain: "kash-pizzas.firebaseapp.com",
+    databaseURL: "https://kash-pizzas.firebaseio.com",
+    projectId: "kash-pizzas",
+    storageBucket: "kash-pizzas.appspot.com",
     messagingSenderId: "119133245723"
 };
 firebase.initializeApp(config);
