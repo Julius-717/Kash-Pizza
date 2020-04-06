@@ -17,7 +17,7 @@
     //Final Date Output;
     var dateNow = day + '.' + month + '.' + year;
     document.getElementById('date').innerHTML = dateNow;
-    document.getElementById('footer-year').innerHTML = year + ' Solent Pizzas. All rights reserved.';
+    document.getElementById('footer-year').innerHTML = year + ' Kash Pizzas. All rights reserved.';
   }
   DateNow();
 
