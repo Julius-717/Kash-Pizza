@@ -125,10 +125,10 @@ var theForm = document.forms["order_form"];
 
 // Pizza Bases Price
 var base_prices = new Array();
-    base_prices["Small Base - £5"] = 5;
-    base_prices["Medium Base - £7.50"] = 7.5;
-    base_prices["Large Base - £10.00"] = 10;
-    base_prices["Extra Large Base - £12.50"] = 12.5;
+    base_prices["Small Base - Kshs500"] = 500;
+    base_prices["Medium Base - Kshs750"] = 750;
+    base_prices["Large Base - Kshs1000"] = 1000;
+    base_prices["Extra Large Base - Kshs1250"] = 1250;
 function Base_Order(){
   var base_price = 0;
   var selected_base = theForm.elements["base"];
@@ -143,10 +143,10 @@ function Base_Order(){
 
 // Toppings Price
 var topping_prices = new Array();
-    topping_prices["Cheese Topping - £0.20"] = 0.2;
-    topping_prices["Mushrooms Topping - £0.40"] = 0.4;
-    topping_prices["Ham Topping - £0.50"] = 0.5;
-    topping_prices["Anchovies Topping - £0.60"] = 0.6;
+    topping_prices["Cheese Topping - Kshs200"] = 200;
+    topping_prices["Mushrooms Topping - Kshs400"] = 400;
+    topping_prices["Ham Topping - Kshs500"] = 500;
+    topping_prices["Anchovies Topping - Kshs600"] = 600;
 function Topping_Order(){
   var topping_price = 0;
   var selected_topping = theForm.elements["topping"];
@@ -160,8 +160,8 @@ function Topping_Order(){
 
 // Extras Price
 var extra_prices = new Array();
-    extra_prices["Extra Chips - £1.50"] = 1.5;
-    extra_prices["Extra Garlic - £2.00"] = 2;
+    extra_prices["Extra Chips - Kshs150"] = 150;
+    extra_prices["Extra Garlic - Kshs200"] = 200;
 function Extra_Order(){
   var extra_price = 0;
   var selected_extra = theForm.elements["extra"];
@@ -196,7 +196,7 @@ function Total_Price() {
       topping_price = Topping_Order();
       extra_price = Extra_Order();
       total_price = base_price + topping_price + extra_price;
-  document.getElementById('total_price').innerHTML = "£" + total_price.toFixed(2);
+  document.getElementById('total_price').innerHTML = "Kshs" + total_price.toFixed(2);
   return total_price;
 }
 
